@@ -1,4 +1,3 @@
-/* --- Styles Généraux / Reset --- */
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -10,7 +9,6 @@ body {
     flex-direction: column;
 }
 
-/* --- Typographie Générale --- */
 h1, h2, h3 {
     font-weight: 700;
     color: #FFFFFF;
@@ -30,7 +28,6 @@ a:hover {
     color: #BBBBBB;
 }
 
-/* --- HEADER / NAVIGATION --- */
 .header-menu {
     display: flex;
     justify-content: space-between;
@@ -56,7 +53,7 @@ a:hover {
     padding: 8px 0;
 }
 
-/* --- Boutons d'Action (CTA) --- */
+
 .cta-button {
     background-color: #FFFFFF;
     color: #000000;
@@ -86,7 +83,7 @@ a:hover {
     color: #000000;
 }
 
-/* --- HERO SECTION --- */
+
 .hero-section {
     flex-grow: 1;
     display: flex;
@@ -94,7 +91,7 @@ a:hover {
     align-items: center;
     text-align: center;
     padding: 80px 60px;
-    /* Ajoutez votre propre image de fond ici */
+    
 }
 
 .hero-content {
@@ -125,7 +122,7 @@ a:hover {
     margin-left: 0;
 }
 
-/* --- FEATURES SECTION --- */
+
 .features-section {
     display: flex;
     justify-content: space-around;
@@ -149,7 +146,7 @@ a:hover {
     color: #BBBBBB;
 }
 
-/* --- CONTACT SECTION (Formulaire) --- */
+/*(Formulaire) --- */
 .contact-section {
     flex-grow: 1;
     display: flex;
@@ -224,8 +221,6 @@ a:hover {
     border-radius: 5px;
 }
 
-
-/* --- FOOTER --- */
 .main-footer {
     padding: 30px 60px;
     text-align: center;
@@ -262,7 +257,6 @@ a:hover {
 }
 
 
-/* --- CONTENEUR CONTACT / CONNEXION --- */
 .conteneur-cont-contact{
     display: flex;
     flex-direction: column;
@@ -288,7 +282,6 @@ a:hover {
     color:white;
 }
 
-/* Règle .conteneur-cont-contact en double, regroupée ci-dessous */
 /* J'ai gardé la plus récente qui a un petit gap (20px) */
 .conteneur-cont-contact {
     display: flex;
@@ -306,15 +299,11 @@ a:hover {
     margin-top: 80px;
     gap: 30px;
     width: 100%;
-    /* Les styles suivants sont inutiles ici car ils sont appliqués à .conteneur-cont-contact input */
-    /* padding: 12px 20px; */ 
-    /* font-size: 16px; */
-    /* transition: all 0.3s ease; */
-    /* color:white; */
+
 }
 
 
-/* --- DEVIS PAGE --- */
+
 .grid-devis{
     display: grid;
     grid-template-columns: repeat(2,1fr);
@@ -363,3 +352,231 @@ a:hover {
     margin: 30px;
     gap:150px
 }
+
+.banniere-service-img {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../images/istockphoto-859916128-1024x1024.jpg') no-repeat center center/cover;
+}
+
+.conteneur-serv-categorie {
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.titre-serv-intro {
+    margin-bottom: 50px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titre-serv-intro h2 {
+    font-size: 36px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.titre-serv-intro p {
+    font-size: 18px;
+    color: #BBBBBB;
+}
+
+.flex-serv-cartes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.carte-element {
+    background-color: #1a1a1a;
+    border: 1px solid #333333;
+    border-radius: 10px;
+    padding: 30px;
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    text-align: left;
+}
+
+.carte-element:hover {
+    transform: translateY(-5px);
+    border-color: #FFFFFF;
+}
+
+.carte-element h3 {
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #FFFFFF;
+    border-bottom: 2px solid #555;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.carte-element p {
+    font-size: 16px;
+    color: #CCCCCC;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.ligne-separation {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0));
+    margin: 0 60px;
+}
+
+
+
+.banniere-service-img {
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url('../images/istockphoto-859916128-1024x1024.jpg') no-repeat center center/cover;
+}
+
+.conteneur-serv-categorie {
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.titre-serv-intro {
+    margin-bottom: 50px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.titre-serv-intro h2 {
+    font-size: 36px;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+}
+
+.titre-serv-intro p {
+    font-size: 18px;
+    color: #BBBBBB;
+}
+
+.flex-serv-cartes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.carte-element {
+    background-color: #1a1a1a;
+    border: 1px solid #333333;
+    border-radius: 10px;
+    padding: 30px;
+    flex: 1;
+    min-width: 280px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    text-align: left;
+}
+
+.carte-element:hover {
+    transform: translateY(-5px);
+    border-color: #FFFFFF;
+}
+
+.carte-element h3 {
+    font-size: 22px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: #FFFFFF;
+    border-bottom: 2px solid #555;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.carte-element p {
+    font-size: 16px;
+    color: #CCCCCC;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.ligne-separation {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(255, 255, 255, 0.2), rgba(0, 0, 0, 0));
+    margin: 0 60px;
+}
+
+
+@media screen and (max-width: 767px) {
+    .header-menu {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .conteneur-serv-categorie {
+        padding: 40px 20px;
+    }
+
+    .titre-serv-intro h2 {
+        font-size: 28px;
+    }
+
+    .flex-serv-cartes {
+        flex-direction: column;
+    }
+
+    .carte-element {
+        width: 100%;
+        min-width: unset;
+        margin-bottom: 20px;
+    }
+
+    .ligne-separation {
+        margin: 0 20px;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .header-menu {
+        padding: 20px 40px;
+    }
+
+    .flex-serv-cartes {
+        justify-content: space-around;
+    }
+
+    .carte-element {
+        flex: 0 0 45%; 
+        min-width: 300px;
+    }
+    
+    .conteneur-serv-categorie {
+        padding: 60px 40px;
+    }
+}
+
+
+@media screen and (min-width: 1024px) {
+    .conteneur-serv-categorie {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .flex-serv-cartes {
+        justify-content: center;
+    }
+
+    .carte-element {
+        flex: 1; 
+        max-width: 350px;
+    }
+}
+
