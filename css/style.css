@@ -1,0 +1,365 @@
+/* --- Styles Généraux / Reset --- */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #03050d;
+    color: #FFFFFF;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- Typographie Générale --- */
+h1, h2, h3 {
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+p {
+    font-weight: 300;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #BBBBBB;
+}
+
+/* --- HEADER / NAVIGATION --- */
+.header-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background-color: #000000;
+    border-bottom: 1px solid #1a1a1a;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.header-menu .logo {
+    font-size: 28px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin: 0;
+}
+
+.nav-links a {
+    margin-left: 30px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 8px 0;
+}
+
+/* --- Boutons d'Action (CTA) --- */
+.cta-button {
+    background-color: #FFFFFF;
+    color: #000000;
+    padding: 10px 40px;
+    border-radius: 40px;
+    font-weight: 700;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-left: 30px;
+    display: inline-block;
+}
+
+.cta-button.secondary {
+    background-color: transparent;
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+}
+
+.cta-button:hover {
+    background-color: #BBBBBB;
+    color: #000000;
+    transform: scale(1.02);
+}
+
+.cta-button.secondary:hover {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+/* --- HERO SECTION --- */
+.hero-section {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 80px 60px;
+    /* Ajoutez votre propre image de fond ici */
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-content h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 40px;
+    color: #CCCCCC;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero-buttons .cta-button {
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-left: 0;
+}
+
+/* --- FEATURES SECTION --- */
+.features-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 80px 60px;
+    background-color: #080808;
+    gap: 40px;
+    text-align: center;
+}
+
+.feature-item {
+    flex: 1;
+    max-width: 300px;
+}
+
+.feature-item h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.feature-item p {
+    color: #BBBBBB;
+}
+
+/* --- CONTACT SECTION (Formulaire) --- */
+.contact-section {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 60px;
+}
+
+.contact-container {
+    background-color: #080808;
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #1a1a1a;
+}
+
+.contact-container h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.contact-container p {
+    font-size: 18px;
+    color: #BBBBBB;
+    margin-bottom: 30px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #FFFFFF;
+    font-size: 15px;
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+    width: calc(100% - 20px);
+    padding: 12px;
+    background-color: #1a1a1a;
+    border: 1px solid #333333;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.contact-form input[type="text"]:focus,
+.contact-form input[type="email"]:focus,
+.contact-form textarea:focus {
+    border-color: #555555;
+    outline: none;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form .cta-button {
+    width: 100%;
+    padding: 15px 0;
+    margin-top: 20px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+
+/* --- FOOTER --- */
+.main-footer {
+    padding: 30px 60px;
+    text-align: center;
+    font-size: 14px;
+    color: #AAAAAA;
+    border-top: 1px solid #1a1a1a;
+    margin-top: auto;
+}
+
+
+/* --- BLOC MODIF-SECTION-2 (Accueil) --- */
+.modif-section-2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    width: 70%;
+    margin: 50px auto;
+    gap: 40px;
+}
+
+.modif-section-2 img{
+    height: auto;
+    width: 75%;
+}
+
+.modif-section-2 p{
+    font-family: 'Roboto';
+    text-align: left;
+    font-size: 16px;
+}
+
+.modif-section-2 h3{
+    font-family: 'Roboto'; 
+}
+
+
+/* --- CONTENEUR CONTACT / CONNEXION --- */
+.conteneur-cont-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    gap: 70px; /* Note : Ce gap est très grand (70px) */
+}
+
+.conteneur-cont-contact h2{
+    font-style: 'Roboto';
+    font-size: 48px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.conteneur-cont-contact input{
+    width: 100%; 
+    padding: 12px 20px; 
+    font-size: 16px;
+    background-color: #222222;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    color:white;
+}
+
+/* Règle .conteneur-cont-contact en double, regroupée ci-dessous */
+/* J'ai gardé la plus récente qui a un petit gap (20px) */
+.conteneur-cont-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 40px;
+    gap: 20px;
+}
+
+.conteneur-conn-connection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+    gap: 30px;
+    width: 100%;
+    /* Les styles suivants sont inutiles ici car ils sont appliqués à .conteneur-cont-contact input */
+    /* padding: 12px 20px; */ 
+    /* font-size: 16px; */
+    /* transition: all 0.3s ease; */
+    /* color:white; */
+}
+
+
+/* --- DEVIS PAGE --- */
+.grid-devis{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 20px;
+    margin: 30px;
+}
+
+.champ {
+    background: #1a1a1a;
+    padding: 15px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.display-service{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    width: 100%;
+}
+
+
+.conteneur-conn-connection a{
+    text-decoration: yes;
+    margin-top: -20px;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.conteneur-conn-connection a:hover{
+    cursor: pointer;
+}
+
+.display-service h1{
+    font-size: 48px;
+    font-family: 'Roboto';
+}
+
+.display-service div{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-between;
+    margin: 30px;
+    gap:150px
+}
