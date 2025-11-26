@@ -4,6 +4,8 @@ Site web dans le cadre du cours initation web - nom site LoadUp
 
 # ReadMe fait a l'aide de Gemini
 
+# Lien du site
+https://chapeav2paille.github.io/Web-Projet-Loadup/
 # 🚛 Loadup - Plateforme de Connexion Logistique
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
